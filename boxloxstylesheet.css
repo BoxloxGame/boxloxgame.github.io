@@ -14,3 +14,12 @@
   position: sticky;
   position: -webkit-sticky;
 }
+
+.donateMenuButton {
+  border-radius: 8px;
+  font-family: Roboto;
+  background-color: orange;
+  position: sticky;
+  position: -webkit-sticky;
+  color: blue;
+}
