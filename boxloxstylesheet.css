@@ -1,0 +1,16 @@
+.navbar {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: grey;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.menuButton {
+  border-radius: 8px;
+  font-family: Roboto;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+}
