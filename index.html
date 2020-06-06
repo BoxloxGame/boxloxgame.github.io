@@ -6,14 +6,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
-<style>
- hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
+ <style>
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
-  </style>
-  
-  <image src="/boxlox-logo.png"><button>Login</button><button>Register</button></image>
-  <hr class="rounded">
+ </style>
+  <div class="navbar">
+   <img src="/boxlox-logo.png">
+   <a href="#" class="active">Home</a>
+   <a href="#">Games</a>
+   <a href="#">Catalog</a>
+   <a href="#" class="right">Forums</a>
+ </div>
   </body>
 </html>
