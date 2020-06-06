@@ -18,7 +18,13 @@
   var enabledark = document.cookie = "theme=dark";
   location.href = "/settings.html"
  }
+    
+ function whitetheme() {
+  var enablewhite = document.cookie = "theme=";
+  location.href = "/settings.html"
+ }
  </script>
 <button onclick="darktheme()">Enable Dark Theme</button>
+<button onclick="whitetheme()">Enable White Theme</button>
 </body>
 </html>
