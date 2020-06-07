@@ -23,3 +23,11 @@
   position: -webkit-sticky;
   color: blue;
 }
+
+.loginBox {
+  font-family: Roboto;
+  border-radius: 8px;
+  background-color: white;
+  position: sticky;
+  position: -webkit-sticky;
+}
