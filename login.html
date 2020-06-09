@@ -8,11 +8,11 @@
 <b>Password: <input type="text" id="password" name="password"></b>
 <p>Remember me: <input type="checkbox" id="rememberlogin" name="rememberlogin"></p>
 <button onclick="somelogin()">Login</button>
-    <p>Now logging in as: <p id="demo"></p></p>
+    <p id="demo"></p>
 <script>
     function somelogin() {
       var username = document.getElementsByName("username")[0].value;
-      document.getElementById("demo").innerHTML = username;
+      document.getElementById("demo").innerHTML = "Now logging in as: " + username;
     }
   </script>
 </body>
