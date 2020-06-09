@@ -4,16 +4,16 @@
 <link rel="icon" type="image/png" href="boxloxicon.png">
 </head>
 <body>
-  <script>
-    function somelogin() {
-      var username = document.getElementByName("username")
-      document.getElementById("demo").innerHTML = username;
-    }
-  </script>
 <b>Username: <input type="text" id="username" name="username"></b>
 <b>Password: <input type="text" id="password" name="password"></b>
 <p>Remember me: <input type="checkbox" id="rememberlogin" name="rememberlogin"></p>
 <button onclick="somelogin()">Login</button>
 <p id="demo"></p>
+<script>
+    function somelogin() {
+      var username = document.getElementByName("username")
+      document.getElementById("demo").innerHTML = username;
+    }
+  </script>
 </body>
 </html>
