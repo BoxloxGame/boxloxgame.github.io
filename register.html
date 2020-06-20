@@ -7,6 +7,30 @@
   <noscript>
     location.href="https://boxloxgame.github.io/comingsoon/"
   </noscript>
+  <script>
+    function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+    function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+   var username = getCookie("username");
+  </script>
 <b>Username: <input type="text" id="username" name="username"></b>
 <b>Password: <input type="password" id="password" name="password"></b>
 <div class="dropdown">
@@ -17,6 +41,10 @@
   </select>
 <p>Are you a robot?</p>
 <input type="text" id="areuarobot" name="areuarobot">
-<button>Register</button>
+<button> onclick="register()" Register</button>
+<script>
+  function register() {
+  document.cookie =  "username=";
+  }
 </body>
 </html>
